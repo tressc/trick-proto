@@ -1,0 +1,28 @@
+.hand {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 0;
+  align-items: flex-end;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .hand {
+    gap: 6px;
+    padding: 8px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hand {
+    gap: 8px;
+    padding: 10px;
+  }
+}

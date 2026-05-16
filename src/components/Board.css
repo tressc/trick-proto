@@ -1,0 +1,94 @@
+.board {
+  padding: 10px;
+  background-color: rgba(52, 152, 219, 0.05);
+  border-radius: 6px;
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.board__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.board__title {
+  margin: 0;
+  font-size: 16px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.board__deck-info {
+  font-size: 12px;
+  color: #7f8c8d;
+  background: white;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+.board__top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.board__trump-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.board__label {
+  font-size: 12px;
+  color: #7f8c8d;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.board__play-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  flex: 1;
+}
+
+.board__play-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  background: white;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .board {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .board__title {
+    font-size: 24px;
+  }
+
+  .board__play-slot {
+    min-height: 160px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .board {
+    max-width: 700px;
+  }
+}

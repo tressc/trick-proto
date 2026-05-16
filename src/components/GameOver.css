@@ -1,0 +1,98 @@
+.game-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.game-over__content {
+  background: white;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  max-width: 400px;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.game-over__title {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.game-over__result {
+  margin-bottom: 24px;
+}
+
+.game-over__winner {
+  font-size: 60px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-over__message {
+  margin: 16px 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.game-over__score {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.game-over__button {
+  width: 100%;
+  padding: 14px;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.game-over__button:active {
+  background: #27ae60;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+  .game-over__content {
+    padding: 40px 32px;
+  }
+
+  .game-over__title {
+    font-size: 36px;
+  }
+
+  .game-over__button {
+    padding: 16px;
+    font-size: 20px;
+  }
+}
